@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Agente">
+  <title>Agente Pessoal · Pixel Code</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🧠 Agente Pessoal</div>
+    <div class="xp" title="Experiência">
+      <span id="level">Nível 1</span>
+      <div class="bar"><i id="xpbar"></i></div>
+    </div>
+  </header>
+
+  <main id="view" aria-live="polite"></main>
+
+  <nav class="tabs" id="tabs">
+    <a href="#hoje" data-tab="hoje">🏠<span>Hoje</span></a>
+    <a href="#agenda" data-tab="agenda">📅<span>Agenda</span></a>
+    <a href="#estudos" data-tab="estudos">💻<span>Estudos</span></a>
+    <a href="#financas" data-tab="financas">💰<span>Finanças</span></a>
+    <a href="#patrimonio" data-tab="patrimonio">📈<span>Patrimônio</span></a>
+    <a href="#relatorio" data-tab="relatorio">📊<span>Relatório</span></a>
+    <a href="#config" data-tab="config">⚙️<span>Config</span></a>
+  </nav>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
